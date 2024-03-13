@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,15 +80,13 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
@@ -109,50 +94,49 @@ padding-right: 20px;
   background-color: whitesmoke;
   color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,13 +168,58 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
-        </style>
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
+
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
+    </style>
 
         <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
     
@@ -262,105 +293,105 @@ padding-right: 20px;
                          IV/ (l.21-24) Une tentative de retour à la raison </br>
               </p>
 
- <p class="texte">
+ <div class="texte">
 
-<button class="tooltip"> La vieillerie poétique <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Rimbaud reconnaît une culture classique dans son processus de création poétique mais marque une distance avec la dimension péjorative du nom. L'emploi de l'imparfait dans « avait une bonne part » peut être interprété avec une valeur d'habitude qui implique une pratique un peu monotone mise à distance. </div></span></button> 
+<div class="tooltip"> La vieillerie poétique <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Rimbaud reconnaît une culture classique dans son processus de création poétique mais marque une distance avec la dimension péjorative du nom. L'emploi de l'imparfait dans « avait une bonne part » peut être interprété avec une valeur d'habitude qui implique une pratique un peu monotone mise à distance. </div></span></div> 
 
 
 
 avait une bonne part dans mon 
 
 
-<button class="tooltip"> alchimie du verbe. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète fait référence à son processus créatif avec la métaphore « alchimie du verbe », le postulat est donc que la poésie est le travail sur une matière première, le langage, pour dépasser le cadre du réel dans une perspective presque magique. </div></span></button> 
+<div class="tooltip"> alchimie du verbe. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète fait référence à son processus créatif avec la métaphore « alchimie du verbe », le postulat est donc que la poésie est le travail sur une matière première, le langage, pour dépasser le cadre du réel dans une perspective presque magique. </div></span></div> 
 
 
 
 </br></br>
 
 
-<button class="tooltip"> Je m'habituai <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> valeur achevée du passé simple, le poète prend de la distance avec ses hallucinations comme quelque chose de révolu dans le passé. </div></span></button> 
+<div class="tooltip"> Je m'habituai <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> valeur achevée du passé simple, le poète prend de la distance avec ses hallucinations comme quelque chose de révolu dans le passé. </div></span></div> 
 
 
 
 à 
 
 
-<button class="tooltip"> l'hallucination simple <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La démarche alchimique est d'abord un regard décentré sur le réel </div></span></button>  
+<div class="tooltip"> l'hallucination simple <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La démarche alchimique est d'abord un regard décentré sur le réel </div></span></div>  
 
 
 
 : je 
 
 
-<button class="tooltip"> voyais <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète énumère alors ses différentes hallucinations. La valeur descriptive de l'imparfait « voyais » insiste sur l'importance de la déformation de la réalité. </div></span></button> 
+<div class="tooltip"> voyais <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète énumère alors ses différentes hallucinations. La valeur descriptive de l'imparfait « voyais » insiste sur l'importance de la déformation de la réalité. </div></span></div> 
 
 
 
 très 
 
 
-<button class="tooltip"> franchement <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'adverbe intensifié souligne le caractère extraordinaire de ces hallucinations. </div></span></button> 
+<div class="tooltip"> franchement <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'adverbe intensifié souligne le caractère extraordinaire de ces hallucinations. </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:rgb(18, 255, 117); color:indianred;"> une mosquée <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:rgb(18, 255, 117); color:indianred;"> une mosquée <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 à la place 
 
 
-<button class="tooltip" style="background-color:rgb(18, 255, 117); color:indianred;"> d'une usine, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:rgb(18, 255, 117); color:indianred;"> d'une usine, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
-<button class="tooltip" style="background-color:grey; color:wheat;"> une école <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:grey; color:wheat;"> une école <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 de tambours faite par 
 
 
-<button class="tooltip" style="background-color:grey; color:wheat;"> des anges, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:grey; color:wheat;"> des anges, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:orangered; color:olivedrab;"> des calèches <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:orangered; color:olivedrab;"> des calèches <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 sur les routes du 
 
 
-<button class="tooltip" style="background-color:orangered; color:olivedrab;"> ciel, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:orangered; color:olivedrab;"> ciel, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:darkmagenta; color:rgb(255, 0, 0);"> un salon <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:darkmagenta; color:rgb(255, 0, 0);"> un salon <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 au fond d'un 
 
 
-<button class="tooltip" style="background-color:darkmagenta; color:rgb(255, 0, 0);"> lac; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:darkmagenta; color:rgb(255, 0, 0);"> lac; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 
-<button class="tooltip"> les monstres, les mystères <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le lien entre « les monstres » et « les mystères » est laissé à la libre imagination du lecteur. </div></span></button> 
+<div class="tooltip"> les monstres, les mystères <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le lien entre « les monstres » et « les mystères » est laissé à la libre imagination du lecteur. </div></span></div> 
 
 
 
 
-<button class="tooltip"> ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passage des virgules aux points virgules à la ligne 4 rompt le rythme de la phrase et donne une dimension incontrôlable aux hallucinations. </div></span></button> 
+<div class="tooltip"> ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passage des virgules aux points virgules à la ligne 4 rompt le rythme de la phrase et donne une dimension incontrôlable aux hallucinations. </div></span></div> 
 
 
 
 
-<button class="tooltip"> un titre <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La référence au « titre » de la pièce comique rend la peur inspirée d'autant plus étrange et hyperbolique. </div></span></button> 
+<div class="tooltip"> un titre <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La référence au « titre » de la pièce comique rend la peur inspirée d'autant plus étrange et hyperbolique. </div></span></div> 
 
 
 
@@ -368,14 +399,14 @@ de
 
 
 
-<button class="tooltip" style="background-color:rgb(0, 8, 255); color:rgb(255, 113, 113);"> vaudeville <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 8, 255); color:rgb(255, 113, 113);"> vaudeville <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
 dressait
 
 
-<button class="tooltip" style="background-color:rgb(0, 8, 255); color:rgb(255, 113, 113);"> des épouvantes <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></button> 
+<div class="tooltip" style="background-color:rgb(0, 8, 255); color:rgb(255, 113, 113);"> des épouvantes <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le contenu de ces visions déformées de la réalité est accentué par une série d'antithèses qui semblent incohérentes (« mosquée/ usine »; « école/ ange » ; « calèches/ ciel » ; « salon/ lac » ; « vaudeville/ épouvantes »). L'incohérence semble ainsi forcée pour montrer l'intensité de ces hallucinations. Des liens symboliques sont possibles entre « mosquée/ ange/ciel ». </div></span></div> 
 
 
 
@@ -386,114 +417,114 @@ devant moi.
 
 
 
-<button class="tooltip">Puis j'expliquai <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passé simple « expliquai » associé à l'adverbe « puis » marque la succession des actions dans un passé révolu: après les hallucinations du regard porté sur la réalité, le poète en rend compte par les mots. </div></span></button> 
+<div class="tooltip">Puis j'expliquai <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passé simple « expliquai » associé à l'adverbe « puis » marque la succession des actions dans un passé révolu: après les hallucinations du regard porté sur la réalité, le poète en rend compte par les mots. </div></span></div> 
 
 
 
 mes 
 
 
-<button class="tooltip"> sophismes magiques <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette démarche est désignée par le vocabulaire argumentatif « sophismes magiques ». Un sophisme est un argument à l'apparence rigoureuse mais qui est en réalité faux. Le fait de l'associer à l'adjectif « magiques » montre que l'objectif n'est pas de tromper le lecteur mais de l'amener vers une autre réalité en décentrant son regard par des images </div></span></button> 
+<div class="tooltip"> sophismes magiques <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette démarche est désignée par le vocabulaire argumentatif « sophismes magiques ». Un sophisme est un argument à l'apparence rigoureuse mais qui est en réalité faux. Le fait de l'associer à l'adjectif « magiques » montre que l'objectif n'est pas de tromper le lecteur mais de l'amener vers une autre réalité en décentrant son regard par des images </div></span></div> 
 
 
 
 avec 
 
 
-<button class="tooltip"> l'hallucination des mots ! <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> des symboles surprenants du point de vue de la raison : « l'hallucination des mots ». La force et l'étrangeté de cette démarche sont renforcées par la tournure exclamative. </div></span></button> 
+<div class="tooltip"> l'hallucination des mots ! <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> des symboles surprenants du point de vue de la raison : « l'hallucination des mots ». La force et l'étrangeté de cette démarche sont renforcées par la tournure exclamative. </div></span></div> 
 
 
 
 </br></br>
 
 
-<button class="tooltip" style="background-color:darkkhaki; color:darkred;"> Je finis <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> passé simple « je finis » : dernière étape du processus de création poétique; antithèse « sacré »/ « désordre » : la perte de contact avec la réalité devient un objectif artistique, c'est en oubliant la raison que le poète déchiffre le monde. </div></span></button> 
+<div class="tooltip" style="background-color:darkkhaki; color:darkred;"> Je finis <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> passé simple « je finis » : dernière étape du processus de création poétique; antithèse « sacré »/ « désordre » : la perte de contact avec la réalité devient un objectif artistique, c'est en oubliant la raison que le poète déchiffre le monde. </div></span></div> 
 
 
 
 par trouver 
 
 
-<button class="tooltip" style="background-color:darkkhaki; color:darkred;"> sacré le désordre <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> passé simple « je finis » : dernière étape du processus de création poétique; antithèse « sacré »/ « désordre » : la perte de contact avec la réalité devient un objectif artistique, c'est en oubliant la raison que le poète déchiffre le monde. </div></span></button> 
+<div class="tooltip" style="background-color:darkkhaki; color:darkred;"> sacré le désordre <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> passé simple « je finis » : dernière étape du processus de création poétique; antithèse « sacré »/ « désordre » : la perte de contact avec la réalité devient un objectif artistique, c'est en oubliant la raison que le poète déchiffre le monde. </div></span></div> 
 
 
 
 de mon esprit. J'étais 
 
 
-<button class="tooltip"> oisif, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète semble reconnaître les limites des conditions nécessaires à la réalisation de son projet. Laisser de côté la logique revient à abandonner des comportements humains. Un terme péjoratif le souligne: l'adjectif « oisif ». Le poète doit être volontairement inactif. </div></span></button> 
+<div class="tooltip"> oisif, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète semble reconnaître les limites des conditions nécessaires à la réalisation de son projet. Laisser de côté la logique revient à abandonner des comportements humains. Un terme péjoratif le souligne: l'adjectif « oisif ». Le poète doit être volontairement inactif. </div></span></div> 
 
 
 
 
-<button class="tooltip"> en proie à une lourde fièvre : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les conséquences négatives sont d'abord physiques « en proie à une lourde fièvre ». </div></span></button> 
+<div class="tooltip"> en proie à une lourde fièvre : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les conséquences négatives sont d'abord physiques « en proie à une lourde fièvre ». </div></span></div> 
 
 
 
-<button class="tooltip"> j'enviais la félicité des bêtes, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Mais la démarche joue aussi sur l'esprit puisque le poête dit ironiquement [...] </div></span></button> 
+<div class="tooltip"> j'enviais la félicité des bêtes, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Mais la démarche joue aussi sur l'esprit puisque le poête dit ironiquement [...] </div></span></div> 
 
 
 
 - les chenilles, qui représentent 
 
 
-<button class="tooltip" style="background-color:darkturquoise; color:darkgoldenrod;"> l'innocence <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il reconnaît ainsi la perte d'humanité dans sa démarche mais aussi la dimension proprement humaine de sa folie puisque les chenilles représentent « l'innocence » et les taupes « la virginité », deux vertus qui forment des antithèses avec les termes péjoratifs du début du paragraphe (« oisif/ fièvre »). </div></span></button> 
+<div class="tooltip" style="background-color:darkturquoise; color:darkgoldenrod;"> l'innocence <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il reconnaît ainsi la perte d'humanité dans sa démarche mais aussi la dimension proprement humaine de sa folie puisque les chenilles représentent « l'innocence » et les taupes « la virginité », deux vertus qui forment des antithèses avec les termes péjoratifs du début du paragraphe (« oisif/ fièvre »). </div></span></div> 
 
 
 
 des limbes, les taupes, le sommeil de 
 
 
-<button class="tooltip" style="background-color:darkturquoise; color:darkgoldenrod;"> la virginité ! <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il reconnaît ainsi la perte d'humanité dans sa démarche mais aussi la dimension proprement humaine de sa folie puisque les chenilles représentent « l'innocence » et les taupes « la virginité », deux vertus qui forment des antithèses avec les termes péjoratifs du début du paragraphe (« oisif/ fièvre »). Ce constat désanchanté est appuyé par la tournure encore une fois exclamative. </div></span></button> 
+<div class="tooltip" style="background-color:darkturquoise; color:darkgoldenrod;"> la virginité ! <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il reconnaît ainsi la perte d'humanité dans sa démarche mais aussi la dimension proprement humaine de sa folie puisque les chenilles représentent « l'innocence » et les taupes « la virginité », deux vertus qui forment des antithèses avec les termes péjoratifs du début du paragraphe (« oisif/ fièvre »). Ce constat désanchanté est appuyé par la tournure encore une fois exclamative. </div></span></div> 
 
 
 
 </br></br>
 
 
-<button class="tooltip"> Mon caractère s'aigrissait. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poête insisite sur son évolution morale qui s'oriente vers le pessimisme avec une valeur presque durative de l'imparfait : « mon caractère s'aigrissait ». </div></span></button> 
+<div class="tooltip"> Mon caractère s'aigrissait. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poête insisite sur son évolution morale qui s'oriente vers le pessimisme avec une valeur presque durative de l'imparfait : « mon caractère s'aigrissait ». </div></span></div> 
 
 
 
 
-<button class="tooltip"> je disais adieu au monde dans d'espèces de romances. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète quitte la réalité personnifiée au profit d'un univers irréel indéterminée : « je disais adieu au monde dans d'espèces de romances ». Cette dernière expression péjorative traduit la distance critique du poète à l'égard de sa démarche. </div></span></button> 
+<div class="tooltip"> je disais adieu au monde dans d'espèces de romances. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète quitte la réalité personnifiée au profit d'un univers irréel indéterminée : « je disais adieu au monde dans d'espèces de romances ». Cette dernière expression péjorative traduit la distance critique du poète à l'égard de sa démarche. </div></span></div> 
 
 
 </br></br>
 
 
-<button class="tooltip"> Je devins <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passé simple peut marquer la brutalité de l'évolution du poète qui « devin[t] un opéra fabuleux ». </div></span></button> 
+<div class="tooltip"> Je devins <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le passé simple peut marquer la brutalité de l'évolution du poète qui « devin[t] un opéra fabuleux ». </div></span></div> 
 
 
 
 
-<button class="tooltip"> un opéra fabuleux : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La référence à l'opéra peut renvoyer à l'art total qui mélange théâtre, instruments de musique et chant, l'art rimbaldien serait celui d'une liberté qui échappe au réel comme le laisse penser l'étymologie « fabuleux » ( fable en latin enchaînement d'actions à la base d'un récit imaginaire). </div></span></button> 
+<div class="tooltip"> un opéra fabuleux : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La référence à l'opéra peut renvoyer à l'art total qui mélange théâtre, instruments de musique et chant, l'art rimbaldien serait celui d'une liberté qui échappe au réel comme le laisse penser l'étymologie « fabuleux » ( fable en latin enchaînement d'actions à la base d'un récit imaginaire). </div></span></div> 
 
 
 
 je vis que tous les êtres ont 
 
 
-<button class="tooltip"> une fatalité de bonheur: <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette démarche libertaire revient à nier la réalité de la logique humaine : l'oxymore « fatalité de bonheur » enferme l'homme dans un désespoir tragique. </div></span></button> 
+<div class="tooltip"> une fatalité de bonheur: <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette démarche libertaire revient à nier la réalité de la logique humaine : l'oxymore « fatalité de bonheur » enferme l'homme dans un désespoir tragique. </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:crimson; color:cornsilk;"> l'action n'est pas la vie, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La négation du réel humain est ensuite grammaticale : « l'action n'est pas la vie » ou exprimée par une antithèse : « la morale est la faiblesse de la cervelle ». </div></span></button> 
+<div class="tooltip" style="background-color:crimson; color:cornsilk;"> l'action n'est pas la vie, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La négation du réel humain est ensuite grammaticale : « l'action n'est pas la vie » ou exprimée par une antithèse : « la morale est la faiblesse de la cervelle ». </div></span></div> 
 
 
 
 mais une façon de gâcher quelque force, un énervement. 
 
 
-<button class="tooltip" style="background-color:crimson; color:cornsilk;"> La morale est la faiblesse de la cervelle. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La négation du réel humain est ensuite grammaticale : « l'action n'est pas la vie » ou exprimée par une antithèse : « la morale est la faiblesse de la cervelle ». </div></span></button> 
+<div class="tooltip" style="background-color:crimson; color:cornsilk;"> La morale est la faiblesse de la cervelle. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La négation du réel humain est ensuite grammaticale : « l'action n'est pas la vie » ou exprimée par une antithèse : « la morale est la faiblesse de la cervelle ». </div></span></div> 
 
 
 
 </br></br>
 
 
-<button class="tooltip"> À chaque être, plusieurs autres vies me semblaient dues. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ce qui est en dernier lieu reproché au réel est une forme d'injustice généralisée et intensifiée par le déterminant distributif « chaque ». </div></span></button> 
+<div class="tooltip"> À chaque être, plusieurs autres vies me semblaient dues. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ce qui est en dernier lieu reproché au réel est une forme d'injustice généralisée et intensifiée par le déterminant distributif « chaque ». </div></span></div> 
 
 
 
@@ -504,71 +535,71 @@ mais une façon de gâcher quelque force, un énervement.
 Aucun des 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> sophismes de la folie, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Si le poète évoquait auparavant des symptômes (« fièvres »), il pose à présent un diagnostic lucide et médical sur les risques du décentrement psychique : les « sophismes magiques » deviennent « les sophismes de la folie [...] qu'on enferme ». </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> sophismes de la folie, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Si le poète évoquait auparavant des symptômes (« fièvres »), il pose à présent un diagnostic lucide et médical sur les risques du décentrement psychique : les « sophismes magiques » deviennent « les sophismes de la folie [...] qu'on enferme ». </div></span></div> 
 
 
 
 - la folie qu'on enferme, - n'a été oublié par moi : je pourrais les redire tous, je tiens 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> le système. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète affirme avoir exploré la fuite du réel et de la raison jusqu'au bout et dit ironiquement en tenir « le système ». Ce dernier terme suppose en effet une construction raisonnée. </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> le système. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète affirme avoir exploré la fuite du réel et de la raison jusqu'au bout et dit ironiquement en tenir « le système ». Ce dernier terme suppose en effet une construction raisonnée. </div></span></div> 
 
 
 
 </br></br>
 
 
-<button class="tooltip"> Ma santé fut menacée. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète poursuit avec un regard médical et évoque au passé simple une nouvelle étape de sa prise de risque « ma santé fut menacée ». </div></span></button> 
+<div class="tooltip"> Ma santé fut menacée. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète poursuit avec un regard médical et évoque au passé simple une nouvelle étape de sa prise de risque « ma santé fut menacée ». </div></span></div> 
 
 
 
 
-<button class="tooltip"> La terreur <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il y a une gradation dans les troubles psychiques avec le terme « terreur ». </div></span></button> 
+<div class="tooltip"> La terreur <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il y a une gradation dans les troubles psychiques avec le terme « terreur ». </div></span></div> 
 
 
 
 venait. Je tombais dans 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> des sommeils de plusieurs jours <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La fuite de la réalité se traduit par une perte de repères temporels: « sommeils de plusieurs jours/ antithèse : levé, je continuais les rêves ». </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> des sommeils de plusieurs jours <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La fuite de la réalité se traduit par une perte de repères temporels: « sommeils de plusieurs jours/ antithèse : levé, je continuais les rêves ». </div></span></div> 
 
 
 , et, 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> levé, je continuais les rêves <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La fuite de la réalité se traduit par une perte de repères temporels: « sommeils de plusieurs jours/ antithèse : levé, je continuais les rêves ». </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> levé, je continuais les rêves <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La fuite de la réalité se traduit par une perte de repères temporels: « sommeils de plusieurs jours/ antithèse : levé, je continuais les rêves ». </div></span></div> 
 
 
 
 
-<button class="tooltip"> les plus tristes. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le superlatif « les rêves les plus tristes » insiste sur cette dégradation mentale. </div></span></button> 
+<div class="tooltip"> les plus tristes. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le superlatif « les rêves les plus tristes » insiste sur cette dégradation mentale. </div></span></div> 
 
  
  
 
-<button class="tooltip"> J'étais mûr pour le trépas, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Suite à cette vision scientifique du trouble mental, Rimbaud en propose une reformulation beaucoup plus poétique : cette voie sans issue est évoqué de manière métaphorique avec une antithèse ironique « j'étais mûr pour le trépas ». </div></span></button> 
+<div class="tooltip"> J'étais mûr pour le trépas, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Suite à cette vision scientifique du trouble mental, Rimbaud en propose une reformulation beaucoup plus poétique : cette voie sans issue est évoqué de manière métaphorique avec une antithèse ironique « j'étais mûr pour le trépas ». </div></span></div> 
 
  
  
 et par 
  
 
-<button class="tooltip"> une route de dangers  <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></button> 
+<div class="tooltip"> une route de dangers  <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></div> 
 
  
  
 
-<button class="tooltip"> ma faiblesse <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></button> 
+<div class="tooltip"> ma faiblesse <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></div> 
 
  
  me menait 
  
 
-<button class="tooltip"> aux confins du monde et de  <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></button> 
+<div class="tooltip"> aux confins du monde et de  <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évolution vers la folie est traduite par la métaphore « route de dangers » et la « faiblesse » mentale du poète l'emmène de manière hyperbolique et littéraire « aux confins du monde et de la Cimmérie ». </div></span></div> 
 
 
 
-<button class="tooltip"> la Cimmérie, patrie de l'ombre et des tourbillons. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette dernière référence littéraire à un pays légendaire couvert de nuages et de brume dans L'Odyssée d'Homère est amplifiée par une personnification poétique et inattendue des éléments naturels « patrie de l'ombre et des tourbillons ». Ainsi si le poète est lucide sur cette fuite du réel qui mène à la folie, il en montre encore une fois la richesse artistique en plaçant sa faiblesse dans une situation quasi épique. </div></span></button> 
+<div class="tooltip"> la Cimmérie, patrie de l'ombre et des tourbillons. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cette dernière référence littéraire à un pays légendaire couvert de nuages et de brume dans L'Odyssée d'Homère est amplifiée par une personnification poétique et inattendue des éléments naturels « patrie de l'ombre et des tourbillons ». Ainsi si le poète est lucide sur cette fuite du réel qui mène à la folie, il en montre encore une fois la richesse artistique en plaçant sa faiblesse dans une situation quasi épique. </div></span></div> 
 
  
 
@@ -576,36 +607,36 @@ et par
 </br></br>
 
 
-<button class="tooltip"> Je dus voyager, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> : le passé simple « je dus » peut encore une fois marquer une successivité et la volonté du poète de se reprendre après avoir pris conscience des dangers de sa démarche. La première des solutions est l'évasion géographique (« voyager »). </div></span></button> 
+<div class="tooltip"> Je dus voyager, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> : le passé simple « je dus » peut encore une fois marquer une successivité et la volonté du poète de se reprendre après avoir pris conscience des dangers de sa démarche. La première des solutions est l'évasion géographique (« voyager »). </div></span></div> 
 
 
 
 
-<button class="tooltip"> distraire les enchantements assemblés sur mon cerveau. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il s'agit ensuite de reprendre contact avec la réalité en s'éloignant de la magie du décentrement évoqué au début de l'extrait (« distraire les enchantements assemblés sur mon cerveau »). </div></span></button> 
+<div class="tooltip"> distraire les enchantements assemblés sur mon cerveau. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Il s'agit ensuite de reprendre contact avec la réalité en s'éloignant de la magie du décentrement évoqué au début de l'extrait (« distraire les enchantements assemblés sur mon cerveau »). </div></span></div> 
 
 
 
 Sur la mer, que j'aimais 
 
 
-<button class="tooltip"> comme si elle eût dû me laver d'une souillure, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète relie le thème du voyage à celui de la purification à travers le motif de l'eau « comme si elle eût dû me laver d'une souillure » : la valeur incertaine de cet imparfait du subjonctif montre une distance du locuteur par rapport à sa croyance. </div></span></button> 
+<div class="tooltip"> comme si elle eût dû me laver d'une souillure, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète relie le thème du voyage à celui de la purification à travers le motif de l'eau « comme si elle eût dû me laver d'une souillure » : la valeur incertaine de cet imparfait du subjonctif montre une distance du locuteur par rapport à sa croyance. </div></span></div> 
 
 
 
 je voyais se lever 
 
 
-<button class="tooltip"> la croix consolatrice. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète évoque aussi la foi chrétienne à travers la personnification « croix consolatrice ». Des pistes de solutions sont proposées mais le poète ne semble pas réellement convaincu. </div></span></button> 
+<div class="tooltip"> la croix consolatrice. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le poète évoque aussi la foi chrétienne à travers la personnification « croix consolatrice ». Des pistes de solutions sont proposées mais le poète ne semble pas réellement convaincu. </div></span></div> 
 
 
 
 
-<button class="tooltip"> J'avais été damné par l'arc-en-ciel. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> le pessimisme quant à un retour à la raison possible semble appuyé par le retour du motif tragique montré comme antérieur et donc nécessaire par le plus que parfait : « j'avais été damné par l'arc-en-ciel ». </div></span></button> 
+<div class="tooltip"> J'avais été damné par l'arc-en-ciel. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> le pessimisme quant à un retour à la raison possible semble appuyé par le retour du motif tragique montré comme antérieur et donc nécessaire par le plus que parfait : « j'avais été damné par l'arc-en-ciel ». </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> Le <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La joie semble interdite au poète (« Le Bonheur était ma fatalité »). </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> Le <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La joie semble interdite au poète (« Le Bonheur était ma fatalité »). </div></span></div> 
 
 
 
@@ -614,7 +645,7 @@ La majuscule au mot « Bonheur » peut faire penser à un dieu antique vengeur (
 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> était ma fatalité, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La joie semble interdite au poète (« Le Bonheur était ma fatalité »). </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> était ma fatalité, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La joie semble interdite au poète (« Le Bonheur était ma fatalité »). </div></span></div> 
 
 
 
@@ -623,12 +654,12 @@ Cette tristesse est aussi bien psychique (« remords ») que physique (« ver »
 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> ma vie serait toujours trop immense <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les deux points peuvent être interprétés comme un lien de parataxe de cause à conséquence : la tristesse tragique du poète créateur ne lui laisse plus qu'une seule solution: ne pas réduire sa vie à la création poétique et s'en éloigner pour se raccrocher à la réalité : « ma vie serait toujours trop immense pour être dévouée à la force et à la beauté ». </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> ma vie serait toujours trop immense <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les deux points peuvent être interprétés comme un lien de parataxe de cause à conséquence : la tristesse tragique du poète créateur ne lui laisse plus qu'une seule solution: ne pas réduire sa vie à la création poétique et s'en éloigner pour se raccrocher à la réalité : « ma vie serait toujours trop immense pour être dévouée à la force et à la beauté ». </div></span></div> 
 
 
 
 
-<button class="tooltip" style="background-color:aqua; color:indianred;"> pour être dévouée à la force et à la beauté. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les deux points peuvent être interprétés comme un lien de parataxe de cause à conséquence : la tristesse tragique du poète créateur ne lui laisse plus qu'une seule solution: ne pas réduire sa vie à la création poétique et s'en éloigner pour se raccrocher à la réalité : « ma vie serait toujours trop immense pour être dévouée à la force et à la beauté ». </div></span></button> 
+<div class="tooltip" style="background-color:aqua; color:indianred;"> pour être dévouée à la force et à la beauté. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Les deux points peuvent être interprétés comme un lien de parataxe de cause à conséquence : la tristesse tragique du poète créateur ne lui laisse plus qu'une seule solution: ne pas réduire sa vie à la création poétique et s'en éloigner pour se raccrocher à la réalité : « ma vie serait toujours trop immense pour être dévouée à la force et à la beauté ». </div></span></div> 
 
 
 </br></br>
@@ -636,7 +667,9 @@ Cette tristesse est aussi bien psychique (« remords ») que physique (« ver »
 
 
 
-<p class="légende">
+</div>
+ 
+ <p class="légende">
   Arthur RIMBAUD, Une Saison en enfer, « Alchimie du verbe », Délires II, 1873
 </p>
 
@@ -667,9 +700,9 @@ Cette tristesse est aussi bien psychique (« remords ») que physique (« ver »
 </p>
     </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 20
-</button>
+</div>
 
 </br></br>
 
@@ -729,11 +762,11 @@ Je dus voyager, distraire les enchantements assemblés sur mon cerveau. Sur la m
 
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
